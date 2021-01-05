@@ -43,6 +43,8 @@ if __name__ == '__main__':
         p / 'data' / 'excel',
         p / 'data' / 'csv',
         p / 'temp_module',
+        p / 'output',
+        p / 'temp'
     ]
     list(map(lambda x: x.mkdir(parents=True, exist_ok=True), path_new))
 
@@ -57,6 +59,3 @@ if __name__ == '__main__':
     list(map(lambda x: x.touch(), file_new))
 
     open(p / 'info.json', 'w').write(json.dumps(info_json))
-
-    
-

@@ -202,7 +202,7 @@ df.a.apply(func2, axis)
   |__ __init__.py
   |__ a.py
 ___ notebook
-  |__ test.ipnb
+  |__ test.ipynb
 ```
 
 注意使用`sys`模块添加环境来载入模块。
@@ -231,4 +231,65 @@ sys.path.append('../')
 from my_module import *
 ```
 
+而模块分离最终的好处是，我们最后可以容易的把这些模块最后移植到生产环境的项目中。
+
 ## 项目级别的优化
+
+### 一个notebook解决一个问题
+
+为了让项目更加具有可读性，对任务做一个分解是不错的方案，要实现**一个notebook只执行一个问题**。具体，我在工作中会以下列方案来做一个jupyter的notebook分类。其中`0. introduction and contents.ipynb`是必须的，里面要介绍该项目中其他notebook的任务，并提供索引。这种方案，就可以提高一个分析/挖掘项目的可读性。
+
+```markdown
+- 0. introduction and contents.ipynb
+- eda.1 EDA问题一.ipynb
+- eda.2 EDA问题二.ipynb
+- eda. ...
+- 1.1 方案一+特征工程.ipynb
+- 1.2 方案一训练和结果.ipynb
+- 2.1 方案二+特征工程.ipynb
+- 2.2 方案二训练和结果.ipynb
+- 3.1 方案三+特征工程.ipynb
+- 3.2 方案三训练和结果.ipynb
+- ...
+- final.1 结论.ipynb
+```
+
+### 对文件进行必要的整理
+
+一个分析、挖掘的项目，经常包括但不限于**数据源**、**中间文件**、**临时文件**、**最终报告**等内容，因此一个好的整理项目文件的习惯是必要的。我在工作中，具体采用下面这个例子来维护整个分析/挖掘项目。当然，初始化这些文件夹是一个非常麻烦的，因此，这里分享一个[初始化脚本](https://github.com/threecifanggen/lambda-and-tau/blob/master/%E5%A6%82%E4%BD%95%E7%AE%A1%E7%90%86Jupyter/tools/initial_jupyter_project.py)（支持python版本3.6+），大家可以根据自己整理习惯稍作修改。
+
+```
+-- 项目根目录
+  |__ SQL：存储需要用的SQL
+  |__ notebook: 存放notebook的地方
+     |__ 0. introduction and contents.ipynb
+     |__ eda.1 EDA问题一.ipynb
+     |__ eda.2 EDA问题二.ipynb
+     |__ eda. ...
+     |__ 1.1 方案一+特征工程.ipynb
+     |__ 1.2 方案一训练和结果.ipynb
+     |__ 2.1 方案二+特征工程.ipynb
+     |__ 2.2 方案二训练和结果.ipynb
+     |__ 3.1 方案三+特征工程.ipynb
+     |__ 3.2 方案三训练和结果.ipynb
+     |__ ...
+     |__ final.1 结论.ipynb
+  |__ src: 撰写报告或者文档时需要引用的文件
+  |__ data: 存放原始数据
+     |__ csv: csv文件
+     	|__ train.csv
+     	|__ ...
+     |__ ...
+  |__ temp: 存放中间数据
+  |__ output: 最后报告需要的综合分析结果
+     |__ *.pptx
+     |__ *.pdf
+     |__ src
+     	|__ example.png
+     	|__ ...
+  |__ temp_module: 自己写的notebook需要引用的模块
+```
+
+## 结语
+
+优化一个Jupyter代码并非不可能，只是看是否具有相关的习惯，增加可读性对自己以及团队的工作和开源社区的声望都会有利，希望上面的建议对大家有所帮助。

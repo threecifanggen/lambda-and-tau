@@ -1,0 +1,298 @@
+nohup: jupyter: Not a directory
+2018-11-10T08:31:52.804961Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2018-11-10T08:31:52.806391Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2018-11-10T08:31:52.806953Z 0 [Note] mysqld (mysqld 5.7.12) starting as process 514 ...
+2018-11-10T08:31:52.815738Z 0 [Warning] Setting lower_case_table_names=2 because file system for /usr/local/var/mysql/ is case insensitive
+2018-11-10T08:31:52.820991Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2018-11-10T08:31:52.821029Z 0 [Note] InnoDB: Uses event mutexes
+2018-11-10T08:31:52.821041Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+2018-11-10T08:31:52.821050Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2018-11-10T08:31:52.822259Z 0 [Note] InnoDB: Number of pools: 1
+2018-11-10T08:31:52.823282Z 0 [Note] InnoDB: Using CPU crc32 instructions
+2018-11-10T08:31:52.835937Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2018-11-10T08:31:52.847593Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2018-11-10T08:31:52.865420Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-11-10T08:31:52.870332Z 0 [Note] InnoDB: Log scan progressed past the checkpoint lsn 25639317865
+2018-11-10T08:31:52.870365Z 0 [Note] InnoDB: Doing recovery: scanned up to log sequence number 25639317874
+2018-11-10T08:31:52.870484Z 0 [Note] InnoDB: Doing recovery: scanned up to log sequence number 25639317874
+2018-11-10T08:31:52.870500Z 0 [Note] InnoDB: Database was not shutdown normally!
+2018-11-10T08:31:52.870514Z 0 [Note] InnoDB: Starting crash recovery.
+2018-11-10T08:31:53.026537Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2018-11-10T08:31:53.026571Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2018-11-10T08:31:53.026692Z 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2018-11-10T08:31:53.048028Z 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2018-11-10T08:31:53.049134Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2018-11-10T08:31:53.049152Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2018-11-10T08:31:53.049398Z 0 [Note] InnoDB: Waiting for purge to start
+2018-11-10T08:31:53.103649Z 0 [Note] InnoDB: 5.7.12 started; log sequence number 25639317874
+2018-11-10T08:31:53.103800Z 0 [Note] InnoDB: Loading buffer pool(s) from /usr/local/var/mysql/ib_buffer_pool
+2018-11-10T08:31:53.104391Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2018-11-10T08:31:53.118068Z 0 [Note] Found ca.pem, server-cert.pem and server-key.pem in data directory. Trying to enable SSL support using them.
+2018-11-10T08:31:53.118102Z 0 [Note] Skipping generation of SSL certificates as certificate files are present in data directory.
+2018-11-10T08:31:53.120589Z 0 [Warning] CA certificate ca.pem is self signed.
+2018-11-10T08:31:53.121023Z 0 [Note] Skipping generation of RSA key pair as key files are present in data directory.
+2018-11-10T08:31:53.132071Z 0 [Note] Server hostname (bind-address): '*'; port: 3306
+2018-11-10T08:31:53.132195Z 0 [Note] IPv6 is available.
+2018-11-10T08:31:53.132252Z 0 [Note]   - '::' resolves to '::';
+2018-11-10T08:31:53.132298Z 0 [Note] Server socket created on IP: '::'.
+2018-11-10T08:31:53.189523Z 0 [Note] Event Scheduler: Loaded 0 events
+2018-11-10T08:31:53.189671Z 0 [Note] mysqld: ready for connections.
+Version: '5.7.12'  socket: '/tmp/mysql.sock'  port: 3306  Homebrew
+2018-11-10T08:31:54.264892Z 0 [Note] InnoDB: Buffer pool(s) load completed at 181110 16:31:54
+2018-11-10T09:23:51.000917Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 555110ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+2018-11-10T09:33:46.001091Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 5030ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+2018-11-10T12:15:45.300525Z 5 [Note] Aborted connection 5 to db: 'self_record' user: 'tonyhuang' host: 'localhost' (Got an error reading communication packets)
+2018-11-10T12:46:20.311936Z 15 [Note] Aborted connection 15 to db: 'self_record' user: 'tonyhuang' host: 'localhost' (Got an error reading communication packets)
+2018-11-10T12:48:24.343686Z 21 [Note] Aborted connection 21 to db: 'self_record' user: 'tonyhuang' host: 'localhost' (Got an error reading communication packets)
+2018-11-10T12:48:48.004647Z 23 [Note] Aborted connection 23 to db: 'self_record' user: 'tonyhuang' host: 'localhost' (Got an error reading communication packets)
+
+Status information:
+
+Current dir: /usr/local/var/mysql/
+Running threads: 2  Stack size: 262144
+Current locks:
+lock: 0x7f8d630c6580:
+
+lock: 0x7f8d63935b80:
+
+lock: 0x7f8d638bbb80:
+
+lock: 0x7f8d638c1f80:
+
+lock: 0x7f8d64074d80:
+
+lock: 0x7f8d6406f380:
+
+lock: 0x7f8d6406e380:
+
+lock: 0x7f8d638ac380:
+
+lock: 0x109e3b9b0:
+
+lock: 0x109e3b8d8:
+
+lock: 0x109e3b800:
+
+lock: 0x109e3b728:
+
+lock: 0x109e3b650:
+
+lock: 0x109e3b578:
+
+lock: 0x109e3b4a0:
+
+lock: 0x109e3b3c8:
+
+lock: 0x109e3b2f0:
+
+lock: 0x109e3bf98:
+
+lock: 0x109e387e8:
+
+lock: 0x109e3c808:
+
+lock: 0x109e3c730:
+
+lock: 0x109e3c658:
+
+lock: 0x109e3c580:
+
+lock: 0x109e3c4a8:
+
+lock: 0x109e3c3d0:
+
+lock: 0x109e3c2f8:
+
+lock: 0x109e3c220:
+
+lock: 0x109e39f88:
+
+lock: 0x109e3ba88:
+
+lock: 0x109e3a3c0:
+
+lock: 0x109e3a2e8:
+
+lock: 0x109e3a210:
+
+lock: 0x109e3a138:
+
+lock: 0x109e3a060:
+
+lock: 0x109e3c148:
+
+lock: 0x109e3c070:
+
+lock: 0x109e3a7f8:
+
+lock: 0x109e3a720:
+
+lock: 0x109e3a648:
+
+lock: 0x109e3a9a8:
+
+lock: 0x109e37f78:
+
+lock: 0x109e3bec0:
+
+lock: 0x109e38ea8:
+
+lock: 0x109e38c20:
+
+lock: 0x109e38dd0:
+
+lock: 0x109e38b48:
+
+lock: 0x109e38cf8:
+
+lock: 0x109e39640:
+
+lock: 0x109e39568:
+
+lock: 0x109e39490:
+
+lock: 0x109e38710:
+
+lock: 0x109e38638:
+
+lock: 0x109e38a70:
+
+lock: 0x109e38560:
+
+lock: 0x109e38998:
+
+lock: 0x109e38488:
+
+lock: 0x109e388c0:
+
+lock: 0x109e393b8:
+
+lock: 0x109e392e0:
+
+lock: 0x109e39208:
+
+lock: 0x109e383b0:
+
+lock: 0x109e38128:
+
+lock: 0x109e382d8:
+
+lock: 0x109e38050:
+
+lock: 0x109e38200:
+
+lock: 0x109e39130:
+
+lock: 0x109e39058:
+
+lock: 0x109e38f80:
+
+lock: 0x109e3bb60:
+
+lock: 0x109e3bde8:
+
+lock: 0x109e3bd10:
+
+lock: 0x109e3bc38:
+
+lock: 0x109e3af90:
+
+lock: 0x109e3aeb8:
+
+lock: 0x109e3ade0:
+
+lock: 0x109e3ad08:
+
+lock: 0x109e3ac30:
+
+lock: 0x109e3b140:
+
+lock: 0x109e3ab58:
+
+lock: 0x109e3aa80:
+
+lock: 0x109e3b068:
+
+lock: 0x109e3a8d0:
+
+lock: 0x109e3a498:
+
+lock: 0x109e3a570:
+
+lock: 0x109e39eb0:
+
+lock: 0x109e39dd8:
+
+lock: 0x109e39a78:
+
+lock: 0x109e39d00:
+
+lock: 0x109e39c28:
+
+lock: 0x109e399a0:
+
+lock: 0x109e39b50:
+
+lock: 0x109e398c8:
+
+lock: 0x109e397f0:
+
+lock: 0x109e39718:
+
+lock: 0x109e3b218:
+
+
+Key caches:
+default
+Buffer_size:       8388608
+Block_size:           1024
+Division_limit:        100
+Age_limit:             300
+blocks used:             5
+not flushed:             0
+w_requests:              0
+writes:                  0
+r_requests:            114
+reads:                   5
+
+
+handler status:
+read_key:          108
+read_next:        1270
+read_rnd           111
+read_first:        131
+write:            4477
+delete               0
+update:              4
+
+Table status:
+Opened tables:        186
+Open tables:          121
+Open files:            17
+Open streams:           0
+
+
+
+Events status:
+LLA = Last Locked At  LUA = Last Unlocked At
+WOC = Waiting On Condition  DL = Data Locked
+
+Event scheduler status:
+State      : INITIALIZED
+Thread id  : 0
+LLA        : n/a:0
+LUA        : n/a:0
+WOC        : NO
+Workers    : 0
+Executed   : 0
+Data locked: NO
+
+Event queue status:
+Element count   : 0
+Data locked     : NO
+Attempting lock : NO
+LLA             : init_queue:95
+LUA             : init_queue:103
+WOC             : NO
+Next activation : never
+2018-11-16T15:19:07.261314Z 3 [Note] Aborted connection 3 to db: 'unconnected' user: 'tonyhuang' host: 'localhost' (Got an error reading communication packets)
